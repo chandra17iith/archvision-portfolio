@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArchVision Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .hero-section {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 150px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      font-weight: 800;
+    }
+
+    .hero-title .highlight {
+      color: #008080;
+    }
+
+    .btn-custom,
+    .btn-teal {
+      background-color: #008080;
+      color: white;
+      font-weight: 600;
+      border: none;
+    }
+
+    .btn-custom:hover,
+    .btn-teal:hover {
+      background-color: #006666;
+    }
+
+    .text-teal {
+      color: #008080 !important;
+    }
+
+    .border-teal {
+      border-color: #008080 !important;
+    }
+    .fixed-img {
+      width:100%;
+  height: 200px;       /* or any height you prefer */
+  object-fit: cover;   /* ensures image covers the box without stretching */
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <i class="bi bi-building me-2"></i>
+        <strong>ArchVision</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active text-teal" href="#">Home</a></li>
+  <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+  <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+  <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-content">
+      <h1 class="hero-title">
+        Arch<span class="highlight">Vision</span> 
+      </h1>
+      <p class="lead">
+        Innovative Mapping, 3D Rendering, Planning, Structural Analysis and Architectural Solutions.<br />
+        Crafting spaces that inspire and endure.
+      </p>
+      <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+        <a href="#projects" class="btn btn-custom px-4 py-2">Explore Our Work</a>
+        <a href="#contact" class="btn btn-light px-4 py-2 text-muted">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id = "projects" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Our Portfolio</h2>
+        <p class="text-muted">Discover a selection of our finest work in mapping, planning, and architecture.</p>
+      </div>
+      <div class="row g-4">
+        <!-- Project Card 1 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title">Modern Residential Planning</h5>
+              <span class="badge bg-light text-dark border">Mapping and Planning </span>
+              <img src="./assets/photos/planning.png" class="img-fluid rounded mt-3 mb-3  fixed-img" alt="Residential Complex" />
+              <p class="card-text">We offer precise land mapping and urban planning solutions using modern geospatial tools. Our approach ensures efficient space utilization and sustainable growth.</p>
+             
+            </div>
+          </div>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title">Modern Residential Complex</h5>
+              <span class="badge bg-light text-dark border">Architecture</span>
+              <img src="./assets/photos/residentail_complex.png" class="img-fluid rounded mt-3 mb-3  fixed-img" alt="Residential Complex" />
+              <p class="card-text">Designing contemporary living spaces with innovation, comfort, and community in mind. Our residential complexes reflect modern architecture and smart living.</p>
+             
+            </div>
+          </div>
+        </div>
+        <!-- Project Card 3 -->
+    
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title">Interior Designing</h5>
+              <span class="badge bg-light text-dark border">Architecture</span>
+              <img src="./assets/photos/interior.png" class="img-fluid rounded mt-3 mb-3  fixed-img" alt="Residential Complex" />
+              <p class="card-text">Transforming interiors with elegant, functional, and personalized designs. We bring harmony between aesthetics and practicality in every space.</p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Process Section -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-2">Our Process</h2>
+      <p class="text-muted mb-5">Driven by insight, structured by creativity, delivered with precision.</p>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <img src="./assets/photos/image.png" alt="Our Process" class="img-fluid rounded-circle border border-4 border-teal shadow" style="width: 18rem; height: 18rem; object-fit: cover;">
+        </div>
+        <div class="col-md-6 text-start">
+          <h4 class="fw-semibold mb-3">Our Structured Approach</h4>
+          <p class="text-muted">
+  At ArchVision, we specialize in delivering comprehensive architectural solutions that merge innovation with practicality. Our offerings span across detailed Mapping, photorealistic 3D Rendering, meticulous Planning, in-depth Structural Analysis, and fully integrated Architectural Design. Each service is tailored to meet the unique needs of every client and project.
+</p>
+<p class="text-muted">
+  From the earliest stages of ideation to the final handover, our process is rooted in both analytical rigor and creative exploration. We believe great design is born through collaboration — which is why every phase, whether conceptual sketching or engineering execution, is thoughtfully crafted to align with our client’s vision, site dynamics, and long-term sustainability. The result: enduring spaces that are both aesthetically compelling and functionally exceptional.
+</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Expertise Section -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h4 class="fw-semibold mb-5">Our Expertise</h4>
+      <div class="row justify-content-center">
+        <!-- Expertise Card 1 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card shadow-sm h-100 border-0">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="bi bi-geo-alt-fill fs-1 text-teal"></i>
+              </div>
+              <h6 class="fw-bold">Structural Analysis</h6>
+              <p class="text-muted small">Using the latest software to analyse the structure.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Expertise Card 2 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card shadow-sm h-100 border-0">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="bi bi-diagram-3-fill fs-1 text-teal"></i>
+              </div>
+              <h6 class="fw-bold">Strategic Planning</h6>
+              <p class="text-muted small">Urban and regional plans to promote sustainable growth.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Expertise Card 3 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card shadow-sm h-100 border-0">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="bi bi-house-door-fill fs-1 text-teal"></i>
+              </div>
+              <h6 class="fw-bold">Innovative Architecture</h6>
+              <p class="text-muted small">Functional and aesthetic building designs tailored to purpose.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Expertise Card 4 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card shadow-sm h-100 border-0">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="bi bi-layout-text-sidebar-reverse fs-1 text-teal"></i>
+              </div>
+              <h6 class="fw-bold">Thoughtful Interiors</h6>
+              <p class="text-muted small">Functional, elegant interior spaces built to client vision.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact Section -->
+  <section id ="contact" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Get In Touch</h2>
+        <p class="text-muted">Have a project or question? We’d love to hear from you.</p>
+      </div>
+      <div class="row">
+        <!-- Contact Info -->
+        <div class="col-md-5 mt-5 mt-md-0">
+          <h5 class="fw-semibold mb-4">Contact Information</h5>
+          <div class="d-flex align-items-start mb-4">
+            <a href="mailto:pdeep1466@gmail.com"><i class="bi bi-envelope-fill fs-4 text-teal me-3"></i></a>
+            <div>
+              <strong>Email</strong><br>
+              <a href="mailto:pdeep1466@gmail.com">pdeep1466@gmail.com</a>
+            </div>
+          </div>
+           <div class="d-flex align-items-start mb-4">
+           <a href="https://www.linkedin.com/in/deep-prakash-dps/" target="_blank">
+             <i class="bi bi-linkedin fs-4 text-teal me-3"></i>
+            </a>
+            <div>
+              <strong>Linkedin</strong><br>
+              <a href="https://www.linkedin.com/in/deep-prakash-dps/">Linkedin Profile</a>
+            </div>
+          </div>
+          <div class="d-flex align-items-start">
+            <i class="bi bi-telephone-fill fs-4 text-teal me-3"></i>
+            <div>
+              <strong>Phone</strong><br>
+              +91 8789582559
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<script src="assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
